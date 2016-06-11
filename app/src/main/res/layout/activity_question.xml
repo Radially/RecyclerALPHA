@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="radial_design.recycleralpha.QuestionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/Question_photo"
+        android:src="@drawable/radial_d_250_logo"
+        android:cropToPadding="false"
+        android:scaleType="centerInside" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Question_photo"
+        android:id="@+id/gl1">
+    <TextView android:text="Guess the "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+        <TextView android:text="Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/tvQ"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gl1">
+
+        <!--1--><Button
+        android:id="@+id/b1"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:text="answer1"
+        android:textStyle="bold"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:padding="5dp"/>
+        <!--2--><Button
+        android:id="@+id/b2"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:text="answer2"
+        android:textStyle="bold"
+        android:layout_row="0"
+        android:layout_column="1"/>
+        <!--3--><Button
+        android:id="@+id/b3"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:text="answer3"
+        android:textStyle="bold"
+        android:layout_row="1"
+        android:layout_column="0" />
+        <!--4--><Button
+        android:id="@+id/b4"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:text="answer4"
+        android:textStyle="bold"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
